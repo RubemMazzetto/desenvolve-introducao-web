@@ -6,6 +6,7 @@
    - Highlight: Nebula Pink (#FF4B91)
 */
 
+/* 1. General Aspects */
 body {
     background-color: #1A2634;
     color: #E6E6FA;
@@ -13,6 +14,50 @@ body {
     line-height: 1.6;
 }
 
+.page-wrapper {
+    max-width: 1200px;
+    width: 960px; /* Fixed width for the entire page */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+p {
+    text-indent: 1em;
+}
+
+/* 2. Titles */
+h1, h2, h3 {
+    color: #FF4B91;
+    text-align: right;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+/* 3. Summary and Main Sections */
+.summary {
+    text-align: right;
+}
+
+.main p {
+    line-height: 1.5;
+}
+
+/* 4. Abbreviations */
+abbr {
+    font-variant: small-caps;
+}
+
+/* Existing styles from previous artifact */
 a {
     color: #FF4B91;
     text-decoration: none;
@@ -21,16 +66,6 @@ a {
 a:hover {
     color: #E6E6FA;
     text-decoration: underline;
-}
-
-h1, h2, h3 {
-    color: #FF4B91;
-}
-
-.page-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
 }
 
 .intro, .main, .sidebar {
