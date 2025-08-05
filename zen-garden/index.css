@@ -7,7 +7,6 @@
    - Lighter Highlight (Hover): rgb(255, 104, 150)
 */
 
-/* 1. General Directives */
 body {
     background-color: #1A2634;
     color: #E6E6FA;
@@ -30,7 +29,6 @@ body {
     display: none;
 }
 
-/* 2. Header Enhancements */
 header {
     background-color: #1A2634;
     color: #E6E6FA;
@@ -46,7 +44,6 @@ header h1 {
     padding-right: 1em;
 }
 
-/* 3. Menu Styling */
 .design-selection ul, .zen-resources ul {
     list-style: none;
 }
@@ -73,7 +70,6 @@ header h1 {
     padding-right: 2%;
 }
 
-/* 4. Footer Styling (Main Section Footer) */
 .main footer {
     display: flex;
     justify-content: center;
@@ -90,7 +86,6 @@ header h1 {
     display: inline-block;
 }
 
-/* 5. Benefits Section */
 .benefits {
     display: flex;
     flex-wrap: wrap;
@@ -109,7 +104,6 @@ header h1 {
     flex: 0 0 70%;
 }
 
-/* 6. Participation Section */
 .participation {
     display: flex;
     flex-wrap: wrap;
@@ -126,7 +120,6 @@ header h1 {
     justify-content: center;
 }
 
-/* 7. Page Footer Styling */
 footer {
     background-color: #E6E6FA;
     color: #1A2634;
@@ -140,7 +133,6 @@ footer a {
     display: inline-block;
 }
 
-/* 8. Link Styling */
 a {
     color: #FF4B91;
     font-weight: bold;
