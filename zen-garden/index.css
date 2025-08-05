@@ -1,4 +1,4 @@
-/* CSS Zen Garden - Cosmic Serenity Theme */
+/* CSS Zen Garden - Cosmic Serenity Theme (Box Model Exercise) */
 
 /* Color Palette:
    - Background: Dark Navy Blue (#1A2634)
@@ -6,7 +6,7 @@
    - Highlight: Nebula Pink (#FF4B91)
 */
 
-/* 1. General Aspects */
+/* 1. General Directives */
 body {
     background-color: #1A2634;
     color: #E6E6FA;
@@ -15,49 +15,60 @@ body {
 }
 
 .page-wrapper {
-    max-width: 1200px;
-    width: 960px; /* Fixed width for the entire page */
+    width: 80%;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 20px;
 }
 
-p {
-    text-indent: 1em;
+.intro {
+    height: 550px;
 }
 
-/* 2. Titles */
-h1, h2, h3 {
-    color: #FF4B91;
-    text-align: right;
+.design-archives {
+    display: none;
 }
 
-h1 {
-    font-size: 1.8rem;
+/* 2. Header Enhancements */
+header {
+    background-color: #1A2634;
+    color: #E6E6FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 2em;
 }
 
-h2 {
-    font-size: 1.4rem;
+header h1 {
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
-h3 {
-    font-size: 1.2rem;
+/* 3. Menu Styling */
+.design-selection ul, .zen-resources ul {
+    list-style: none;
 }
 
-/* 3. Summary and Main Sections */
-.summary {
-    text-align: right;
+.design-selection li, .zen-resources li {
+    margin-bottom: 1em;
+    text-align: center;
 }
 
-.main p {
-    line-height: 1.5;
+/* 4. Footer Styling */
+footer {
+    background-color: #E6E6FA;
+    color: #1A2634;
+    margin: 4%;
+    text-align: center;
 }
 
-/* 4. Abbreviations */
-abbr {
-    font-variant: small-caps;
+footer a {
+    border: 2px solid #1A2634;
+    padding: 0.5em;
+    display: inline-block;
 }
 
-/* Existing styles from previous artifact */
+/* Additional Styles for Consistency */
 a {
     color: #FF4B91;
     text-decoration: none;
@@ -66,15 +77,6 @@ a {
 a:hover {
     color: #E6E6FA;
     text-decoration: underline;
-}
-
-.intro, .main, .sidebar {
-    margin-bottom: 20px;
-}
-
-header {
-    text-align: center;
-    padding: 40px 0;
 }
 
 .summary, .preamble, .explanation, .participation, .benefits, .requirements {
@@ -90,12 +92,4 @@ header {
     background-color: rgba(255, 75, 145, 0.2);
     padding: 20px;
     border-radius: 8px;
-}
-
-.design-selection ul, .design-archives ul, .zen-resources ul {
-    list-style: none;
-}
-
-.design-selection li, .design-archives li, .zen-resources li {
-    margin-bottom: 10px;
 }
