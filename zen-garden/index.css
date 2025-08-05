@@ -1,4 +1,4 @@
-/* CSS Zen Garden - Cosmic Serenity Theme (Box Model Exercise) */
+/* CSS Zen Garden - Cosmic Serenity Theme (Box Model & Positioning Exercise) */
 
 /* Color Palette:
    - Background: Dark Navy Blue (#1A2634)
@@ -18,6 +18,7 @@ body {
     width: 80%;
     max-width: 1280px;
     margin: 0 auto;
+    position: relative; /* Reference for positioning */
 }
 
 .intro {
@@ -66,6 +67,23 @@ footer a {
     border: 2px solid #1A2634;
     padding: 0.5em;
     display: inline-block;
+}
+
+/* New Positioning Styles */
+.explanation {
+    width: 60%;
+    margin-right: 35%;
+    border-right: 1px solid #1f295c;
+    padding-right: 2%;
+}
+
+.design-selection {
+    position: absolute;
+    top: 560px;
+    left: 62%;
+    width: 33%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 /* Additional Styles for Consistency */
