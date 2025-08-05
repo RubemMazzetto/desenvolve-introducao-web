@@ -1,9 +1,10 @@
-/* CSS Zen Garden - Cosmic Serenity Theme (Flexbox Exercise) */
+/* CSS Zen Garden - Cosmic Serenity Theme (Links, First Letter, and Menu Borders Exercise) */
 
 /* Color Palette:
    - Background: Dark Navy Blue (#1A2634)
    - Font: Soft White (#E6E6FA)
    - Highlight: Nebula Pink (#FF4B91)
+   - Lighter Highlight (Hover): rgb(255, 104, 150)
 */
 
 /* 1. General Directives */
@@ -55,6 +56,15 @@ header h1 {
     text-align: center;
 }
 
+/* New: Menu Borders */
+.design-selection li {
+    border-top: 1px solid #1f295c;
+}
+
+.design-selection li:last-child {
+    border-bottom: 1px solid #1f295c;
+}
+
 .design-selection {
     position: absolute;
     top: 560px;
@@ -73,7 +83,7 @@ header h1 {
 }
 
 .main footer a {
-    width: 60px; /* Consistent size for links */
+    width: 60px;
     text-align: center;
     box-sizing: border-box;
     border: 2px solid #1A2634;
@@ -104,7 +114,7 @@ header h1 {
 .participation {
     display: flex;
     flex-wrap: wrap;
-    border-bottom: 1px solid #1f295c; /* No border-top to avoid duplication */
+    border-bottom: 1px solid #1f295c;
 }
 
 .participation h3, .participation p {
@@ -131,17 +141,29 @@ footer a {
     display: inline-block;
 }
 
-/* Additional Styles for Consistency */
+/* 8. Link Styling */
 a {
     color: #FF4B91;
+    font-weight: bold;
     text-decoration: none;
 }
 
 a:hover {
-    color: #E6E6FA;
-    text-decoration: underline;
+    color: rgb(255, 104, 150); /* 15% lighter than #FF4B91 */
 }
 
+a:visited {
+    font-weight: normal;
+}
+
+/* 9. First Letter of First Paragraph in Main Section */
+.explanation p:first-child::first-letter {
+    font-size: 48px; /* 3x default font size (16px) */
+    font-family: Georgia, serif;
+    float: left;
+}
+
+/* Additional Styles for Consistency */
 .summary, .preamble, .explanation, .participation, .benefits, .requirements {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
