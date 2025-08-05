@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homenagem a Optimus Prime</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            z-index: 1000;
+        }
+
+        nav img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff0000;
+        }
+
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1620288379847-6f1f7f11e6b8');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 4em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            margin-bottom: 20px;
+        }
+
+        .carousel {
+            width: 80%;
+            max-width: 800px;
+            overflow: hidden;
+            position: relative;
+            margin: 20px auto;
+        }
+
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-images img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 80px auto 20px;
+            padding: 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #ff0000;
+            margin-bottom: 15px;
+        }
+
+        aside {
+            float: right;
+            width: 30%;
+            background-color: #e6e6e6;
+            padding: 20px;
+            margin-left: 20px;
+            border-radius: 8px;
+        }
+
+        aside img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ff0000;
+            color: white;
+        }
+
+        .enemy-carousel {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            position: relative;
+        }
+
+        .enemy-details {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ff0000;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/0f/Autobots_logo.png" alt="Autobots Logo">
+        <ul>
+            <li><a href="#apresentation">Apresentação</a></li>
+            <li><a href="#history">História</a></li>
+            <li><a href="#hall-of-fallen">Hall dos Derrotados</a></li>
+            <li><a href="#sources">Fontes</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1><strong>Optimus Prime:</strong> <em>A lenda</em></h1>
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="assets/img/pratica/optimus/prime-1.jpg" alt="Optimus Prime 1">
+                <img src="assets/img/pratica/optimus/prime-2.jpg" alt="Optimus Prime 2">
+                <img src="assets/img/pratica/optimus/prime-3.jpg" alt="Optimus Prime 3">
+            </div>
+            <button class="carousel-button prev">❮</button>
+            <button class="carousel-button next">❯</button>
+        </div>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Ficha de Identificação</h2>
+            <img src="assets/img/pratica/optimus/profile-picture.jpg" alt="Optimus Prime Profile">
+            <ul>
+                <li><strong>Nome / Título Adquirido:</strong> <em>Optimus Prime (Primax)</em></li>
+                <li><strong>Nome Batismo:</strong> <em>Orion Pax</em></li>
+                <li><strong>Origem:</strong> Cybertron</li>
+                <li><strong>Função:</strong> Líder dos Autobots</li>
+                <li><strong>Transformação:</strong> Caminhão Freightliner FL86 (G1) / Peterbilt 379 (Filmes)</li>
+                <li><strong>Armas:</strong> Machado de Energon, Espada de Julgamento, Canhões</li>
+            </ul>
+        </aside>
+
+        <section id="apresentation">
+            <h2>Apresentação</h2>
+            <p><strong>Optimus Prime</strong>, originalmente batizado como <em>Orion Pax</em>, é o líder supremo dos Autobots, uma figura icônica na franquia Transformers. Representando <strong>coragem</strong>, <em>honra</em> e <strong>sacrifício</strong>, ele é o portador da Matriz de Liderança, um artefato que simboliza sabedoria e poder. Sua missão é proteger a vida e promover a paz, enfrentando os Decepticons liderados por seu arqui-inimigo, <em>Megatron</em>. Optimus é um símbolo de esperança para Cybertron e a Terra.</p>[](https://en.wikipedia.org/wiki/Optimus_Prime)
+        </section>
+
+        <section id="words">
+            <h2>Palavras do herói</h2>
+            <p>" Eu testemunhei a capacidade e a coragem deles. E, embora sejamos de mundos distintos, como nós, eles são mais do que os olhos podem ver."</p>
+            <p>"⁠Na essência de todas as lendas existe uma verdade, alguns poucos bravos unidos para salvar seus mundos. Podemos ser heróis em nossa própria vida, cada um de nós, se tivermos coragem para tentar."</p>
+            <p>"Existem mistérios no Universo que nunca desvendaremos, mas quem nós somos e por que estamos aqui não faz parte desses segredos, as respostas carregamos dentro de nós."</p>
+            
+            
+            [](https://www.pensador.com/autor/optimus_prime/)
+        </section>
+
+        <section id="history">
+            <h2>História nos Filmes</h2>
+            <ul>
+                <li><strong>Transformers (2007):</strong> Optimus lidera os Autobots na Terra para recuperar o AllSpark. Enfrenta <em>Megatron</em> em uma batalha épica, protegendo a humanidade.</li>[](https://www.imdb.com/title/tt0418279/)
+                <li><strong>Revenge of the Fallen (2009):</strong> Morre enfrentando Megatron, mas é ressuscitado pela Matriz de Liderança. Derrota <em>The Fallen</em> com a ajuda de Jetfire.</li>[](https://en.wikipedia.org/wiki/Transformers:_Revenge_of_the_Fallen)
+                <li><strong>Dark of the Moon (2011):</strong> Lidera a defesa contra os Decepticons em Chicago, enfrentando Sentinel Prime e Megatron.</li>[](https://www.space.com/transformer-movies-in-order)
+                <li><strong>Age of Extinction (2014):</strong> Perseguido por humanos, enfrenta Lockdown e Galvatron. Lidera os Dinobots em batalha.</li>[](https://michaelbaystransformers.fandom.com/wiki/Optimus_Prime)
+                <li><strong>The Last Knight (2017):</strong> Sob controle de Quintessa, torna-se Nemesis Prime temporariamente. Derrota Megatron e salva a Terra de Unicron.</li>[](https://en.wikipedia.org/wiki/Transformers:_The_Last_Knight)
+            </ul>
+        </section>
+
+        <section id="hall-of-fallen">
+            <h2>Hall dos Derrotados</h2>
+            <table>
+                <tr>
+                    <th>Conquista</th>
+                    <th>Ano</th>
+                </tr>
+                <tr>
+                    <td>Derrota de <strong>Megatron</strong> em Mission City.</td>
+                    <td>2007</td>
+                </tr>
+                <tr>
+                    <td>Derrota de <strong>Fallen</strong> no Egito.</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <td>Derrota de <strong>Sentinel Prime</strong> em Chicago.</td>
+                    <td>2011</td>
+                </tr>
+                <tr>
+                    <td>Derrota de <strong>Lockdown</strong> em Hong Kong.</td>
+                    <td>2014</td>
+                </tr>
+                <tr>
+                    <td>Derrota de <strong>Quintess</strong>.</td>
+                    <td>2017</td>
+                </tr>
+            </table>
+
+            <div class="enemy-carousel">
+                <div class="carousel-images">
+                    <img src="assets/img/pratica/decepticons/megatron.jpg" alt="Megatron" data-enemy="megatron">
+                    <img src="assets/img/pratica/decepticons/fallen.jpg" alt="Fallen" data-enemy="fallen">
+                    <img src="assets/img/pratica/decepticons/Sentinel.webp" alt="Sentinel" data-enemy="sentinel">
+                    <img src="assets/img/pratica/decepticons/Lockdown.webp" alt="Lockdown" data-enemy="lockdown">
+                    <img src="assets/img/pratica/decepticons/Quintess.webp" alt="Quintess" data-enemy="quintess">
+                </div>
+                <button class="carousel-button prev">❮</button>
+                <button class="carousel-button next">❯</button>
+            </div>
+
+            <div class="enemy-details" id="enemy-details">
+                <h3>Megatron</h3>
+                <p>Líder dos Decepticons, enfrentado por Optimus em <em>Transformers (2007)</em>. A batalha em Mission City resultou na derrota de <strong>Megatron</strong> com a ajuda do AllSpark.</p>[](https://www.imdb.com/title/tt0418279/)
+            </div>
+        </section>
+
+        <section id="sources">
+            <h2>Fontes</h2>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Optimus_Prime">Wikipedia - Optimus Prime</a></li>[](https://en.wikipedia.org/wiki/Optimus_Prime)
+                <li><a href="https://en.wikipedia.org/wiki/Transformers_(film)">Wikipedia - Transformers (2007)</a></li>[](https://www.imdb.com/title/tt0418279/)
+                <li><a href="https://en.wikipedia.org/wiki/Transformers:_Revenge_of_the_Fallen">Wikipedia - Revenge of the Fallen</a></li>[](https://en.wikipedia.org/wiki/Transformers:_Revenge_of_the_Fallen)
+                <li><a href="https://en.wikipedia.org/wiki/Transformers:_The_Last_Knight">Wikipedia - The Last Knight</a></li>[](https://en.wikipedia.org/wiki/Transformers:_The_Last_Knight)
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Criado em 03 de Agosto de 2025</p>
+        <p>Fontes: <a href="https://en.wikipedia.org/wiki/Transformers">Wikipedia Transformers</a> | <a href="https://michaelbaystransformers.fandom.com">Transformers Movie Wiki</a></p>
+    </footer>
+
+    <script>
+        // Carousel para imagens de destaque
+        const carousel = document.querySelector('.carousel .carousel-images');
+        const images = carousel.querySelectorAll('img');
+        const prevButton = document.querySelector('.carousel .prev');
+        const nextButton = document.querySelector('.carousel .next');
+        let currentIndex = 0;
+
+        function showImage(index) {
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage(currentIndex);
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+        });
+
+        // Carousel para inimigos
+        const enemyCarousel = document.querySelector('.enemy-carousel .carousel-images');
+        const enemyImages = enemyCarousel.querySelectorAll('img');
+        const enemyPrevButton = document.querySelector('.enemy-carousel .prev');
+        const enemyNextButton = document.querySelector('.enemy-carousel .next');
+        const enemyDetails = document.querySelector('#enemy-details');
+        let enemyIndex = 0;
+
+        const enemyInfo = {
+            megatron: {
+                name: 'Megatron',
+                details: 'Líder dos Decepticons, enfrentado por Optimus em <em>Transformers (2007)</em>. A batalha em Mission City resultou na derrota de <strong>Megatron</strong> com a ajuda do AllSpark.'[](https://www.imdb.com/title/tt0418279/)
+            },
+            fallen: {
+                name: 'The Fallen',
+                details: 'Antigo Prime que traiu seus irmãos. Derrotado por Optimus em <em>Revenge of the Fallen (2009)</em> com a Matriz de Liderança.'[](https://en.wikipedia.org/wiki/Transformers:_Revenge_of_the_Fallen)
+            },
+            galvatron: {
+                name: 'Galvatron',
+                details: 'Forma reconstruída de Megatron em <em>Age of Extinction (2014)</em>. Optimus enfrentou-o em Hong Kong com os Dinobots.'[](https://michaelbaystransformers.fandom.com/wiki/Optimus_Prime)
+            },
+            devastator: {
+                name: 'Devastator',
+                details: 'Combinação dos Constructicons, destruído em <em>Revenge of the Fallen (2009)</em> por um ataque naval.'[](https://en.wikipedia.org/wiki/Transformers:_Revenge_of_the_Fallen)
+            }
+        };
+
+        function showEnemyImage(index) {
+            enemyCarousel.style.transform = `translateX(-${index * 100}%)`;
+            const enemy = enemyImages[index].dataset.enemy;
+            enemyDetails.innerHTML = `
+                <h3>${enemyInfo[enemy].name}</h3>
+                <p>${enemyInfo[enemy].details}</p>
+            `;
+        }
+
+        enemyPrevButton.addEventListener('click', () => {
+            enemyIndex = (enemyIndex - 1 + enemyImages.length) % enemyImages.length;
+            showEnemyImage(enemyIndex);
+        });
+
+        enemyNextButton.addEventListener('click', () => {
+            enemyIndex = (enemyIndex + 1) % enemyImages.length;
+            showEnemyImage(enemyIndex);
+        });
+
+        // Inicializar carrosséis
+        showImage(currentIndex);
+        showEnemyImage(enemyIndex);
+    </script>
+</html>
